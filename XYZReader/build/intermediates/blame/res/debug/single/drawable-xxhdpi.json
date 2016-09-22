@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/kare2436/Desktop/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable-xxhdpi/logo.png",
+        "source": "/Users/kare2436/Desktop/xyzreader/XYZReader/src/main/res/drawable-xxhdpi/logo.png"
+    },
+    {
+        "merged": "/Users/kare2436/Desktop/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_share.png",
+        "source": "/Users/kare2436/Desktop/xyzreader/XYZReader/src/main/res/drawable-xxhdpi/ic_share.png"
+    },
+    {
+        "merged": "/Users/kare2436/Desktop/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_arrow_back.png",
+        "source": "/Users/kare2436/Desktop/xyzreader/XYZReader/src/main/res/drawable-xxhdpi/ic_arrow_back.png"
+    }
+]
