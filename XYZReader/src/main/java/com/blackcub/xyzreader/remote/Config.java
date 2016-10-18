@@ -1,4 +1,4 @@
-package com.example.xyzreader.remote;
+package com.blackcub.xyzreader.remote;
 
 import java.net.MalformedURLException;
 import java.net.URL;

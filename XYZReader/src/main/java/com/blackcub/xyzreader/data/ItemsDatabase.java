@@ -1,13 +1,13 @@
-package com.example.xyzreader.data;
+package com.blackcub.xyzreader.data;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import static com.example.xyzreader.data.ItemsProvider.Tables;
+import static com.blackcub.xyzreader.data.ItemsProvider.Tables;
 
 public class ItemsDatabase extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "xyzreader.db";
+    private static final String DATABASE_NAME = "com.blackcub.xyzreader.db";
     private static final int DATABASE_VERSION = 1;
 
     public ItemsDatabase(Context context) {
