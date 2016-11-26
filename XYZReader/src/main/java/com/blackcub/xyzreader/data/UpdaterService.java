@@ -1,6 +1,8 @@
 package com.blackcub.xyzreader.data;
 
 import android.app.IntentService;
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.content.ContentProviderOperation;
 import android.content.ContentValues;
 import android.content.Intent;
@@ -12,6 +14,7 @@ import android.os.RemoteException;
 import android.text.format.Time;
 import android.util.Log;
 
+import com.blackcub.xyzreader.R;
 import com.blackcub.xyzreader.remote.RemoteEndpointUtil;
 
 import org.json.JSONArray;
@@ -55,7 +58,15 @@ public class UpdaterService extends IntentService {
         cpo.add(ContentProviderOperation.newDelete(dirUri).build());
 
         try {
+            Notification notification = new Notification.Builder(this)
+                    .setContentText("Downloading")
+                    .setSmallIcon(R.mipmap.ic_launcher)
+                    .build();
+
+            NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+            notificationManager.notify(0, notification);
             JSONArray array = RemoteEndpointUtil.fetchJsonArray();
+            notificationManager.cancel(0);
             if (array == null) {
                 throw new JSONException("Invalid parsed item array" );
             }
