@@ -21,9 +21,11 @@
         <set>
             <objectAnimator
                 android:duration="@android:integer/config_shortAnimTime"
+                android:interpolator="@android:interpolator/linear"
                 android:propertyName="translationZ"
                 android:valueTo="@dimen/fab_press_translation_z"
-                android:valueType="floatType" />
+                android:valueType="floatType"
+                android:valueFrom="0dp"/>
         </set>
     </item>
     <item>
@@ -31,7 +33,7 @@
             <objectAnimator
                 android:duration="@android:integer/config_shortAnimTime"
                 android:propertyName="translationZ"
-                android:valueTo="0"
+                android:valueTo="0dp"
                 android:valueType="floatType" />
         </set>
     </item>

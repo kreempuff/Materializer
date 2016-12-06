@@ -82,7 +82,11 @@ public class ArticleDetailActivity extends ActionBarActivity
         mUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onSupportNavigateUp();
+                // Had to comment out. Doesn't support default reverse transition
+                // Using the onSupportNavigateUp method just brings up old previous activity
+                // The behavior desired was to reverse the explode transition defined in xml
+                //onSupportNavigateUp();
+                ArticleDetailActivity.super.onBackPressed();
             }
         });
 

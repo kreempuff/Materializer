@@ -18,7 +18,8 @@
 <resources>
 
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
-
+        <item name="android:windowExitTransition">@transition/explode</item>
+        <item name="android:windowReenterTransition">@android:transition/slide_top</item>
     </style>
 
     <style name="Theme.Bacon.Detail">
